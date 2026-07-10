@@ -1,5 +1,9 @@
 # Inventory Sync Middleware — Demo
 
+**Live demo:** https://inventory-sync-demo-7d5u.onrender.com
+*(hosted on Render's free tier — spins down after 15 min idle, first load may take ~30-60s
+to wake up; inventory resets to seed data on each wake-up)*
+
 A working demo of the problem most multi-channel retailers have: they sell the same product
 on an online storefront **and** in a physical store, but the two systems don't talk to each
 other. Someone sells the last unit in-store, the website doesn't know, and an online customer
