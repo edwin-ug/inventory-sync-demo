@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory Sync — Live Demo</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+    <p class="back-link"><a href="/">← Inventory Sync</a></p>
+    <h1>Inventory Sync</h1>
+    <p class="subtitle">
+        One product database. Two sales channels. Sell from either one and watch the other update instantly —
+        no manual reconciliation, no overselling.
+    </p>
+</header>
+
+<main>
+    <section class="channels">
+        <div class="channel-card" id="channel-online">
+            <h2>🛒 Online Store</h2>
+            <p class="channel-desc">e.g. Shopify / Jumia storefront</p>
+            <div class="product-list" data-channel="ONLINE_STORE"></div>
+        </div>
+
+        <div class="sync-arrow" aria-hidden="true">
+            <div class="pulse"></div>
+            <span>middleware</span>
+        </div>
+
+        <div class="channel-card" id="channel-pos">
+            <h2>🏬 Physical POS</h2>
+            <p class="channel-desc">e.g. in-store checkout terminal</p>
+            <div class="product-list" data-channel="PHYSICAL_POS"></div>
+        </div>
+    </section>
+
+    <section class="inventory-panel">
+        <h2>Single Source of Truth — Live Inventory</h2>
+        <table id="inventory-table">
+            <thead>
+                <tr><th>SKU</th><th>Product</th><th>Price (UGX)</th><th>Stock</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <section class="log-panel">
+        <h2>Sync Log</h2>
+        <div id="sync-log"></div>
+    </section>
+</main>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

@@ -3,54 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Live Inventory Sync — Multi-Channel Middleware Demo</title>
-<link rel="stylesheet" href="css/style.css">
+<title>Inventory Sync — Stop Overselling Across Channels</title>
+<meta name="description" content="Inventory Sync keeps your online store and physical till reading from one real-time stock number, so you never sell the same item twice.">
+<link rel="stylesheet" href="/css/landing.css">
 </head>
 <body>
-<header>
-    <h1>Real-Time Inventory Sync Middleware</h1>
-    <p class="subtitle">
-        One product database. Two sales channels. Sell from either one and watch the other update instantly —
-        no manual reconciliation, no overselling.
+
+<nav>
+    <span class="wordmark">Inventory Sync</span>
+    <a class="nav-cta" href="/demo">Try the Live Demo</a>
+</nav>
+
+<header class="hero">
+    <h1>One inventory. Every channel.<br>Always in sync.</h1>
+    <p class="hero-sub">
+        If you sell online and in person, you already know the problem: someone buys the last
+        unit in-store, the website doesn't find out, and a second customer buys something that
+        no longer exists. Inventory Sync keeps every channel reading from the same real-time
+        number — automatically.
     </p>
+    <div class="hero-ctas">
+        <a class="btn btn-primary" href="/demo">Try the Live Demo →</a>
+        <a class="btn btn-secondary" href="mailto:edwinkomagum@gmail.com?subject=Inventory%20Sync%20-%20Diagnostic%20Call">Book a Diagnostic</a>
+    </div>
 </header>
 
 <main>
-    <section class="channels">
-        <div class="channel-card" id="channel-online">
-            <h2>🛒 Online Store</h2>
-            <p class="channel-desc">e.g. Shopify / Jumia storefront</p>
-            <div class="product-list" data-channel="ONLINE_STORE"></div>
-        </div>
-
-        <div class="sync-arrow" aria-hidden="true">
-            <div class="pulse"></div>
-            <span>middleware</span>
-        </div>
-
-        <div class="channel-card" id="channel-pos">
-            <h2>🏬 Physical POS</h2>
-            <p class="channel-desc">e.g. in-store checkout terminal</p>
-            <div class="product-list" data-channel="PHYSICAL_POS"></div>
+    <section class="problems">
+        <h2>The problem isn't your stock. It's that it lives in two places.</h2>
+        <div class="problem-grid">
+            <div class="problem-card">
+                <div class="problem-icon">⚠️</div>
+                <h3>Oversold orders</h3>
+                <p>A sale in one channel doesn't reach the other in time, so you sell something
+                you no longer have — then refund it and apologize.</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">🕑</div>
+                <h3>Manual reconciliation</h3>
+                <p>Closing time means counting stock by hand and updating the website yourself
+                — hours a week spent fixing a problem that shouldn't exist.</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">💸</div>
+                <h3>Lost trust, lost sales</h3>
+                <p>Every cancelled order is a customer who came back to a competitor instead —
+                and a review that says so.</p>
+            </div>
         </div>
     </section>
 
-    <section class="inventory-panel">
-        <h2>Single Source of Truth — Live Inventory</h2>
-        <table id="inventory-table">
-            <thead>
-                <tr><th>SKU</th><th>Product</th><th>Price (UGX)</th><th>Stock</th></tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+    <section class="proof">
+        <h2>See it actually work</h2>
+        <p class="proof-sub">
+            This isn't a mockup. Sell from either channel below and watch the other update
+            instantly, with a live log of every sync — including sales that get blocked before
+            they oversell.
+        </p>
+        <a href="/demo" class="proof-shot-link">
+            <img src="/img/demo-screenshot.png" alt="Screenshot of the Inventory Sync live dashboard showing synced stock across Online Store and Physical POS channels" class="proof-shot">
+        </a>
+        <a class="btn btn-primary" href="/demo">Open the Live Demo →</a>
     </section>
 
-    <section class="log-panel">
-        <h2>Sync Log</h2>
-        <div id="sync-log"></div>
+    <section class="process">
+        <h2>How it works</h2>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>We map your systems</h3>
+                <p>A paid diagnostic of your actual stack — your storefront, your till, your
+                accounting software — so we know exactly where stock gets out of sync.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3>We build the sync</h3>
+                <p>Custom middleware connecting your specific systems in real time — not a
+                generic plugin you have to configure yourself.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3>You never oversell again</h3>
+                <p>Ongoing monitoring keeps it running, with a monthly review of what the data
+                is telling you about your business.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <h2>Stop losing sales to your own spreadsheet.</h2>
+        <p>Book a paid diagnostic and get a clear picture of where your systems disagree —
+        and what it's costing you.</p>
+        <a class="btn btn-primary" href="mailto:edwinkomagum@gmail.com?subject=Inventory%20Sync%20-%20Diagnostic%20Call">Book a Diagnostic</a>
     </section>
 </main>
 
-<script src="js/app.js"></script>
+<footer>
+    <span>Inventory Sync</span>
+    <a href="https://github.com/edwin-ug/inventory-sync-demo" target="_blank" rel="noopener">Source on GitHub</a>
+</footer>
+
 </body>
 </html>

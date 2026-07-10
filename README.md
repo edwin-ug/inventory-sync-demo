@@ -1,6 +1,7 @@
-# Inventory Sync Middleware — Demo
+# Inventory Sync
 
-**Live demo:** https://inventory-sync-demo-7d5u.onrender.com
+**Live site:** https://inventory-sync-demo-7d5u.onrender.com — a marketing landing page
+**Live demo:** https://inventory-sync-demo-7d5u.onrender.com/demo — the interactive dashboard
 *(hosted on Render's free tier — spins down after 15 min idle, first load may take ~30-60s
 to wake up; inventory resets to seed data on each wake-up)*
 
@@ -37,9 +38,9 @@ Requires Java 21+ and Maven.
 mvn spring-boot:run
 ```
 
-Then open http://localhost:8080 — sell a few units from either the "Online Store" or
-"Physical POS" panel and watch the other channel, the live inventory table, and the sync
-log update together.
+Then open http://localhost:8080 for the landing page, or http://localhost:8080/demo to go
+straight to the dashboard — sell a few units from either the "Online Store" or "Physical POS"
+panel and watch the other channel, the live inventory table, and the sync log update together.
 
 ## Architecture
 
